@@ -1,0 +1,75 @@
+@font-face {
+ font-family:'Raleway', sans-serif;
+
+}
+
+body{
+    margin: auto;
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    
+}
+/* Style the Nav */
+.topnav {
+  position: relative;
+  display: flex;
+  margin: 16px;  
+}
+.topnav a {
+  color: #0065fc;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+/* Style the nav-right */
+.topnav-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: auto;
+  font-size: 17px;
+  color: #0065fc;
+}
+.topnav-text {
+  flex:  0 1 auto;
+  margin: 20px;
+  justify-content: flex-end;
+}
+#signin{
+    font-weight: bold;   
+    border: none;
+}
+
+
+/* Style the nav-logo */
+.logo{
+  display: inline-block;
+  flex:  1 1 auto;
+  margin: 0 auto;
+  justify-content: flex-start;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+/* For the  active/current Nav */
+.topnav-text:active {
+  border-top: 5px solid #0065fc;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
