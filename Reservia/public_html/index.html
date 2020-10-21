@@ -33,17 +33,65 @@
             <h2>Trouvez votre hèbergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
             
-            <div>
-                <ul class="container-header">
-                  <li class="flex home"><i class="fas fa-map-marker-alt"></i></li> 
-                  <li class="flex text-adress">Marseille,France</li> 
-                  <li class="flex rechercher">Rechercher</li>
-                </ul>
+            <form action="" method="get" class="container-header">
+            
+                <div class="container-header">
+                  <i class="fas fa-map-marker-alt flex home"></i>
+                  <label for="adress-text"></label>
+                  <input type="text" name="adress-text" id="adress-text" placeholder="Marseille,France">
+                  <input  type="submit" class="flex rechercher" Value="Rechercher">
+                </div>
+            </form>
+            <br>
+            <div class="filtre">
+                <div class="filtre-label">
+                    Filtres
+                </div>
+                <div class="cadre">
+                    <span class="filtre-logo-container">
+                        <i class="fas fa-money-bill-wave filtre-logo"></i>
+                    </span>
+                    <span class="filtre-text-container">
+                        Economique
+                    </span>                    
+                </div>
+                <div class="cadre">
+                    <span class="filtre-logo-container">
+                        <i class="fas fa-child  filtre-logo"></i>
+                    </span>
+                    <span class="filtre-text-container">
+                        Familial
+                    </span>                    
+                </div>
+                <div class="cadre">
+                    <span class="filtre-logo-container">
+                        <i class="fas fa-heart filtre-logo"></i>
+                    </span>
+                    <span class="filtre-text-container">
+                        Romantique
+                    </span>                    
+                </div>
+                <div class="cadre">
+                    <span class="filtre-logo-container">
+                        <i class="fas fa-dog filtre-logo"></i>
+                    </span>
+                    <span class="filtre-text-container">
+                        Animaux autorisés
+                    </span>                    
+                </div>
+                <div class="info-container">
+                    <div class="info-label">
+                        <i class="fas fa-info info-logo"></i>
+                    </div>
+                    <div class="info-text">
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
+                </div>
+                
+                
             </div>
-            
-            
 
-
+            
         </header>
         <main>
             <section></section>
