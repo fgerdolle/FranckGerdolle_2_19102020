@@ -9,40 +9,42 @@
         <script src="https://kit.fontawesome.com/c86141f044.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <!-- Top navigation -->
         <nav>
-            <!-- Top navigation -->
             <div class="topnav">
                 <div  class="logo">
                     <img src="../images/logo/Reservia.svg">
                 </div>
-              <div class="topnav-right">
-                  
-                  <div>
-                    <a href="#hebergements" class="topnav-text">Hébergements</a>
-                  </div>
-                  <div>
-                    <a href="#activites"  class="topnav-text">Activités</a>
-                  </div>
-                  <div >
-                    <a href="#inscrire" class="topnav-text" id="signin">S'inscrire</a>
-                  </div>
-              </div>
+                <div class="topnav-right">
+
+                    <div>
+                        <a href="#hebergements" class="topnav-text">Hébergements</a>
+                    </div>
+                    <div>
+                        <a href="#activites"  class="topnav-text">Activités</a>
+                    </div>
+                    <div >
+                        <a href="#inscrire" class="topnav-text" id="signin">S'inscrire</a>
+                    </div>
+                </div>
             </div>
         </nav>
+        <!-- Headers Localisation -->
         <header>
             <h2>Trouvez votre hèbergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
-            
+
             <form action="" method="get" class="container-header">
-            
+
                 <div class="container-header">
-                  <i class="fas fa-map-marker-alt flex home"></i>
-                  <label for="adress-text"></label>
-                  <input type="text" name="adress-text" id="adress-text" placeholder="Marseille,France">
-                  <input  type="submit" class="flex rechercher" Value="Rechercher">
+                    <i class="fas fa-map-marker-alt flex home"></i>
+                    <label for="adress-text"></label>
+                    <input type="text" name="adress-text" id="adress-text" placeholder="Marseille,France">
+                    <input  type="submit" class="flex rechercher" Value="Rechercher">
                 </div>
             </form>
             <br>
+            <!-- Headers Filtering -->
             <div class="filtre">
                 <div class="filtre-label">
                     Filtres
@@ -87,20 +89,183 @@
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
                 </div>
-                
-                
             </div>
-
-            
         </header>
+        <!-- Main Section -->
         <main>
-            <section></section>
+            <!-- Section 1 Hébergements -->
+            <section class="hebergement">
+                <!-- Box1 : Hebergements -->
+                <div class="box1">
+                    <div>
+                        <h2 class="h2-title">Hébergements à Marseille</h2>
+                    </div>
+                    <div class="row-hebergement-1">
+                        <div class="column-hebergement">
+                            <div class="card-hebergement">
+                                <img src="../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="hebergement-picture" >
+                                <div class="card-text">
+                                    <h3 class="title-card">Auberge la Cannebière</h3>
+                                    <span class="title-card">Nuit à partir de <strong>25€</strong></span>
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star nochecked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column-hebergement">
+                            <div class="card-hebergement">
+                                <img src="../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="hebergement-picture" >
+                                <div class="card-text">
+                                    <h3 class="title-card">Hôtel du port</h3>
+                                    <span class="title-card">Nuit à partir de <strong>52€</strong></span>
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column-hebergement">
+                            <div class="card-hebergement">
+                                <img src="../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="hebergement-picture" >
+                                <div class="card-text">
+                                    <h3 class="title-card">Hôtel Les mouettes</h3>
+                                    <span class="title-card">Nuit à partir de <strong>76€</strong></span>
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star nochecked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-hebergement-1">
+                        <div class="column-hebergement">
+                            <div class="card-hebergement">
+                                <img src="../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="hebergement-picture" >
+                                <div class="card-text">
+                                    <h3 class="title-card">Hôtel de la mer</h3>
+                                    <span class="title-card">Nuit à partir de <strong>46€</strong></span>
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star nochecked"></span>
+                                        <span class="fa fa-star nochecked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column-hebergement">
+                            <div class="card-hebergement">
+                                <img src="../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="hebergement-picture" >
+                                <div class="card-text">
+                                    <h3 class="title-card">Auberge Le Panier</h3>
+                                    <span class="title-card">Nuit à partir de <strong>23€</strong></span>
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star nochecked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column-hebergement">
+                            <div class="card-hebergement">
+                                <img src="../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="hebergement-picture" >
+                                <div class="card-text">
+                                    <h3 class="title-card">Hôtel chez Amina</h3>
+                                    <span class="title-card">Nuit à partir de <strong>96€</strong></span>
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box2 : Populaires -->
+                <div class="box2">
+                    <div>
+                        <h2 class="h2-title">Les Plus populaires</h2>
+                    </div>
+                    <div class="row-hebergement-1">
+                        <div  class="card-populaire">
+                            <img src="../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="populaire-picture" >  
+
+                            <h3 class="title-card">Hôtel Le soleil du matin</h3>
+                            <span class="title-card">Nuit à partir de <strong>128€</strong></span>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-hebergement-1">
+
+                        <div  class="card-populaire">
+                            <img src="../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="populaire-picture" >  
+
+                            <h3 class="title-card">Hôtel Le soleil du matin</h3>
+                            <span class="title-card">Nuit à partir de <strong>128€</strong></span>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-hebergement-1">
+                        <div  class="card-populaire">
+                            <img src="../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="populaire-picture" >  
+
+                            <h3 class="title-card">Hôtel Le soleil du matin</h3>
+                            <span class="title-card">Nuit à partir de <strong>128€</strong></span>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 2: Activités -->
             <section></section>
         </main>
+        <!-- Footer  -->
         <footer>
-            
+
         </footer>
-        
-   
+
+
     </body>
 </html>
