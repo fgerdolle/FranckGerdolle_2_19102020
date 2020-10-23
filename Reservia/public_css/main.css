@@ -12,7 +12,7 @@ body{
 .topnav {
     position: relative;
     display: flex;
-    margin: 16px;  
+        margin: 20px 100px 20px 0; 
 }
 .topnav a {
     color: #0065fc;
@@ -417,14 +417,14 @@ body{
     width: 344px;
     height: 100px;
     object-fit: cover;
- 
-    
+
+
 }
 .picture-large{
     width: 344px;
     height: 413px;
-    
-    
+
+
 }
 
 .picture-pomegues{
@@ -440,7 +440,27 @@ body{
     margin-left: 20px;
     text-align: left;
     font-weight: bold;
-        
+
 }
 
+/*--------------------------Style Footer---------------------------*/
+.box3{
+    width: 100%;
 
+}
+
+.footer-propos{
+    float: left;
+    margin: 40px 0 40px 0;
+}
+
+.footer-hebergement{
+
+    float: left;
+    margin: 40px 0 40px 400px;
+}
+
+.footer-assistance{
+    float: right;
+    margin: 40px 400px 40px 0;
+}
