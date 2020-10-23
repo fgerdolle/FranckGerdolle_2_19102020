@@ -228,7 +228,10 @@ body{
     border-radius: 20px;
 }
 
-
+.clic-card{
+    text-decoration: none;
+    color: black;
+}
 
 .h2-title, .afficher-plus{
     margin-left:40px;
@@ -348,7 +351,14 @@ body{
 .rating-populaire{
     margin-top: 45px;
 }
-
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .box2 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
 
 /*--------------------------Style Section 2 Activite---------------------------*/
 .box3{
@@ -441,6 +451,14 @@ body{
     text-align: left;
     font-weight: bold;
 
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .box3 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
 
 /*--------------------------Style Footer---------------------------*/
