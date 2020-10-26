@@ -8,15 +8,15 @@ body{
     font-family: 'Raleway',Arial, Helvetica, sans-serif;
 
 }
+
+
 /* --------------------------------Style the Nav ----------------------------------------------*/
 .topnav {
-    position: relative;
     display: flex;
-        margin: 20px 100px 20px 0; 
+    margin: 20px 100px 20px 0; 
 }
 .topnav a {
     color: #0065fc;
-    text-align: center;
     padding: 14px 16px;
     font-size: 17px;
     text-decoration: none;
@@ -32,9 +32,8 @@ body{
     color: #0065fc;
 }
 .topnav-text {
-    flex:  0 1 auto;
     margin: 20px;
-    justify-content: flex-end;
+
 }
 #signin{
     font-weight: bold;   
@@ -59,22 +58,13 @@ body{
     border-top: 5px solid #0065fc;
 }
 
-/* ------------------------Responsive navigation menu (for mobile devices)----------------------- */
-@media screen and (max-width: 600px) {
-    .topnav a, .topnav-right {
-        float: none;
-        display: block;
-    }
 
-    .topnav-centered a {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
-    }
-}
 
 /*--------------------------Style Headers Search----------------------------------------------------------*/
+.header-title{
+    font-weight: bolder;
+}
+
 .container-header {
     display: flex;
     flex-wrap: wrap;
@@ -118,23 +108,11 @@ body{
 }
 
 
-@media screen and (max-width: 500px) {
-    .navbar a {
-        float: none;
-        display: inline;
-    }
-}
-
 /*--------------------------Style Headers Filtering---------------------------*/
 .filtre, .filtre-label{
     display: inline-block;
     margin-right: 33px;
     margin-top: 30px;
-}
-
-.filtre-label{
-    display: inline-block;
-    margin-right: 33px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -143,10 +121,10 @@ body{
     display: inline-block;
     height: 50px;     
     border-radius: 25px;
-    border-top:  1px solid  black;
-    border-bottom:   1px solid  black;
-    border-right:  1px solid  black;
-    border-left: 1px solid  #deebff;
+    border-top:  1px solid   #d9d9d9;
+    border-bottom:   1px solid   #d9d9d9;
+    border-right:  1px solid   #d9d9d9;
+    border-left: none;
     margin-right: 33px;
 }
 
@@ -207,6 +185,7 @@ body{
 
 }
 
+
 /*--------------------------Style Section 1 Hebergement---------------------------*/
 .hebergement{
     display: grid;
@@ -214,8 +193,6 @@ body{
     grid-gap: 40px;
     grid-auto-rows: minmax(100px, auto);
 }
-
-
 
 .box1{
     float: left;
@@ -293,16 +270,20 @@ body{
     margin: 0 0 15px 0;
 
 }
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-    .box1 {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
 
 /*--------------------------Style Section 1 Populaire---------------------------*/
+.h2-title-populaire{
+    margin-left: 40px;
+    font-weight: bold;
+    float: left;
+    margin-right: 120px;
+}
+.chart-logo{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+
+}
 .box2{
     float: right;
     background-color: #F2F2F2;
@@ -351,14 +332,7 @@ body{
 .rating-populaire{
     margin-top: 45px;
 }
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-    .box2 {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
+
 
 /*--------------------------Style Section 2 Activite---------------------------*/
 .box3{
@@ -452,14 +426,7 @@ body{
     font-weight: bold;
 
 }
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-    .box3 {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
+
 
 /*--------------------------Style Footer---------------------------*/
 .box3{
@@ -481,4 +448,137 @@ body{
 .footer-assistance{
     float: right;
     margin: 40px 400px 40px 0;
+}
+
+
+
+
+/* ------------------------Responsive ----------------------- */
+@media only screen and (max-width: 1650px){
+    body{
+        display: block;
+        width: 100%;
+
+    }
+    .box1 {
+        display: table-cell;
+        float: none;
+    }
+    .hebergement{
+        display: inline;
+    } 
+    .box2{
+        display: block;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .box3 {
+        display: inline-block;
+        float: none;
+    }
+    .row-activite-container{
+        grid: none;
+        display: block;
+    }
+    .card-Vieux-port, .card-Pomegues, .card-Calangues, .card-Dame-de-la-garde, .card-Frioul, .card-Longchamps{
+        margin-top: 20px;
+    }
+    .footer-propos, .footer-hebergement,.footer-assistance{
+        float: none;
+        display: contents;
+    }
+}
+@media only screen and (max-width: 1129px) {
+    body{
+        margin: 1em;
+        width: auto;
+    }
+    .filtre, .filtre-label {
+        display: block;
+    }
+    .cadre{
+        margin-top: 10px;
+        display: table;
+    }
+    .info-container {
+        display: initial;
+    }  
+}
+@media only screen and (max-width: 1100px) {
+    .topnav a, .topnav-right {
+        float: none;
+
+    }
+    .navbar a {
+        float: none;
+        display: inline;
+    }
+    .box1{
+        width: 880px;
+    }
+}
+@media only screen and (max-width: 760px) {
+
+    .topnav a, .topnav-right {
+
+        display: block;
+    }
+
+    .filtre, .filtre-label {
+        float: none;
+
+    }
+    .box1{
+        width: 480px;
+    }
+}
+@media only screen and (max-width: 620px) {
+    header h2{
+        display: table-caption;
+    }
+
+    .info-container {
+        white-space: nowrap;
+        display: initial;
+    }
+    .info-label{
+        display: block;
+        float: left;
+    }
+    .info-text{
+        display: table-caption;
+    }
+    .info-text-p {
+        white-space: break-spaces;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container-header{
+        display: inline-block;
+        width: 15em;
+        overflow: inherit;
+    }
+    .home{
+        width: inherit;
+    }
+    .rechercher{
+        width: inherit;
+    }
+    .box1{
+        width: 380px;
+    }
+    .box2{
+        width: 380px;
+    }
+    .card-populaire{
+        width: 330px;
+    }
+    .h2-title-populaire {
+        margin-right: 20px;
+    }
+
+
 }
