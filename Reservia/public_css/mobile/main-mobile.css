@@ -1,23 +1,34 @@
-@font-face {
-    font-family:'Raleway', sans-serif;
+html{
+    font-family: 'Raleway','Arial', 'Helvetica','sans-serif';
 
 }
 
-body{
-
-    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+body{    
     margin: 5px;
 
 }
 
 
 /* --------------------------------Style the Nav top ----------------------------------------------*/
+.title{    
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 black;
+}
+
+
+
 .topnav {
     display: inline;
     margin: 20px 100px 20px 0; 
 }
-.topnav a {
-    color: #0065fc;
+
+.topnav .inscription a{
+    text-decoration: none;
+}
+
+.topnav .topnav-right a {
+
     padding: 14px 16px;
     font-size: 17px;
     text-decoration: none;
@@ -30,10 +41,13 @@ body{
 .inscription{
     float: right;
     margin-top: 15px;
+
 }
 #signin{
     font-weight: bold;   
     border: none;
+    color: #0065fc;
+
 }
 .logo{
     display: inline-block;
@@ -50,15 +64,19 @@ body{
 .topnav-text-hebergement{
 
     float: left;
-    width: 160px;
+    width: 185px;
     text-align: center;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 10px;
 
 
 }
 .topnav-text-activite{
     float: right;
-    width: 160px;
+    width: 180px;
     text-align: center;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 10px;
 }
 
 
@@ -66,22 +84,33 @@ body{
 
 
 /* ------------------------For the  active/current Nav------------------------------------------- */
-.topnav-text-hebergement:active {
+
+.topnav-text-hebergement:hover {
     border-bottom: 5px solid #0065fc;
+    color: #0065fc;
 }
-.topnav-text-activite:active {
-    border-bottom: 5px solid #0065fc;
+.hebergement-active:hover {
+    color: #0065fc;
 }
 
+.topnav-text-activite:hover {
+    border-bottom: 5px solid #0065fc;
+    color: #0065fc;
+}
+.activite-active:hover {   
+    color: #0065fc;
+}
 
 /*--------------------------Style Headers Search----------------------------------------------------------*/
 .header-title{
-    font-weight: bolder;
+    font-weight: bold;
     display: block;
     margin-left: 10px;
+    font-size: 25px;
+    text-shadow: 0 0 black;
 }
 .header-text{
-    margin-left: 10px;
+    margin: 10px 0 40px 10px;
 }
 .container-header {
     display: flex;
@@ -112,6 +141,7 @@ body{
     font-weight: bold;
     font-size: 20px;
     width: 200px;
+    font-family: 'Raleway','Arial', 'Helvetica','sans-serif';
 
 }
 
@@ -125,7 +155,7 @@ body{
 /*--------------------------Style Headers Filtering---------------------------*/
 .filtre, .filtre-label{
     display: block;
-    margin-top: 10px;
+    margin: 20px 0 10px 10px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -157,7 +187,7 @@ body{
     border-left: none;
 }
 
-.cadre:hover{
+.cadre:hover, .cadre-economie:hover, .cadre-famille:hover{
     background-color: #deebff;
 }
 
@@ -167,8 +197,6 @@ body{
     background-color: #deebff;
     width: 50px; 
     height: inherit;
-    font-size: 20px;
-    text-align: center;
     vertical-align: middle;
 }
 
@@ -176,6 +204,7 @@ body{
     font-size: 20px;
     text-align: center;
     margin: 15px;
+    color: #0065fc;
 }
 
 .filtre-text-container{
@@ -200,6 +229,7 @@ body{
     text-align: center;
     margin: 0 10px 0 10px;
     float: left;
+
 
 }
 
@@ -230,9 +260,9 @@ body{
     color: black;
 }
 
-.h2-title, .afficher-plus{
-    margin-left: 10px;
-    font-weight: bolder;
+.activite-title, .afficher-plus{
+    margin: 40px 0 0 10px;
+
 }
 
 .column-hebergement {
@@ -248,9 +278,9 @@ body{
 
 .card-hebergement {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
+    padding: 0 0px 16px 0px;
+    margin: 15px;
     text-align: center;
-    background-color: #f2f2f2;
     width: 325px;
     height: 200px;
     border-radius:10px;
@@ -280,16 +310,17 @@ body{
 }
 
 .rating-hebergement{
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
-.title-card{
-    margin: 0 0 15px 0;
+.text-card{
+    display: block;
+    margin: 10px 0 15px 0;
 }
 
 .afficher-plus{
     margin: 0 0 40px 10px;
-    font-weight: bolder;
+
 }
 
 /*--------------------------Style Section 1 Populaire---------------------------*/
@@ -396,19 +427,48 @@ body{
 /*--------------------------Style Footer---------------------------*/
 .box4{
 
-    margin-left: 20px;
 
+    background-color: #F2F2F2;
+
+}
+.footer-propos,.footer-hebergement,.footer-assistance{
+    margin-left: 20px;
+    padding-top: 20px;
 }
 
 
-
 /* ------------------------Responsive ----------------------- */
-/*
-@media only screen and (max-width: 1650px){
+
+@media only screen and (min-width: 667px){
     body{
         display: block;
         width: 100%;
 
+    }
+    .logo-picture {
+        margin: 0 400px 20px 20px;
+    }
+    .topnav-text-hebergement {
+        width: 333px;
+    }
+    .topnav-text-activite {
+        width: 333px;
+    }
+    .header-title{
+        display: inline-block;
+        margin-top: 40px;
+    }
+    .container-header {
+        width: fit-content;
+    }
+    .filtre, .filtre-label {
+        display: inline-block;
+    }
+    .cadre-famille { 
+        margin-right: 100px;
+    }
+    .cadre-romantique{
+        margin-right: 200px;
     }
     .box1 {
         display: table-cell;
@@ -422,114 +482,3 @@ body{
         float: none;
     }
 }
-
-@media only screen and (max-width: 1400px) {
-    .box3 {
-        display: inline-block;
-        float: none;
-    }
-    .row-activite-container{
-        grid: none;
-        display: block;
-    }
-    .card-Vieux-port, .card-Pomegues, .card-Calangues, .card-Dame-de-la-garde, .card-Frioul, .card-Longchamps{
-        margin-top: 20px;
-    }
-    .footer-propos, .footer-hebergement,.footer-assistance{
-        float: none;
-        display: contents;
-    }
-}
-@media only screen and (max-width: 1129px) {
-    body{
-        margin: 1em;
-        width: auto;
-    }
-    .filtre, .filtre-label {
-        display: block;
-    }
-    .cadre{
-        margin-top: 10px;
-        display: table;
-    }
-    .info-container {
-        display: initial;
-    }  
-}
-@media only screen and (max-width: 1100px) {
-    .topnav a, .topnav-right {
-        float: none;
-
-    }
-    .navbar a {
-        float: none;
-        display: inline;
-    }
-    .box1{
-        width: 880px;
-    }
-}
-@media only screen and (max-width: 760px) {
-
-    .topnav a, .topnav-right {
-
-        display: block;
-    }
-
-    .filtre, .filtre-label {
-        float: none;
-
-    }
-    .box1{
-        width: 480px;
-    }
-}
-@media only screen and (max-width: 620px) {
-    header h2{
-        display: table-caption;
-    }
-
-    .info-container {
-        white-space: nowrap;
-        display: initial;
-    }
-    .info-label{
-        display: block;
-        float: left;
-    }
-    .info-text{
-        display: table-caption;
-    }
-    .info-text-p {
-        white-space: break-spaces;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .container-header{
-        display: inline-block;
-        width: 15em;
-        overflow: inherit;
-    }
-    .home{
-        width: inherit;
-    }
-    .rechercher{
-        width: inherit;
-    }
-    .box1{
-        width: 380px;
-    }
-    .box2{
-        width: 380px;
-    }
-    .card-populaire{
-        width: 330px;
-    }
-    .h2-title-populaire {
-        margin-right: 20px;
-    }
-
-
-}
-*/
