@@ -255,6 +255,12 @@ body{
     display: contents;
 }
 
+#ancre-hebergements{
+    font-weight: bold;    
+    margin: 40px 0 30px 20px;
+    display: block;
+}
+
 .clic-card{
     text-decoration: none;
     color: black;
@@ -330,6 +336,7 @@ body{
     float: left;
 
 }
+
 .chart-logo{
     font-size: 30px;
     text-align: center;
@@ -470,6 +477,10 @@ body{
     .cadre-romantique{
         margin-right: 200px;
     }
+    .info-text {
+        display: inline;
+
+    }
     .box1 {
         display: table-cell;
         float: none;
@@ -478,7 +489,28 @@ body{
         display: inline;
     } 
     .box2{
-        display: block;
-        float: none;
+        width: auto;  
+        height: 750px;
+    }
+    .row-hebergement-1{
+        margin: 40px;
+    }
+    .card-populaire {       
+        width: 400px;
+    }
+    .h2-title-populaire {
+        margin-left: 40px;    
+    }
+    .chart-logo {    
+        margin-right: 110px;  
+    }
+    #ancre-hebergements {    
+        margin-left: 40px;    
+    }
+    .afficher-plus, .activite-title {  
+        margin-left: 20px;
+    }
+    .card-activite {
+        margin-left: 30px;
     }
 }
