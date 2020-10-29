@@ -1,0 +1,602 @@
+html{
+    font-family: 'Raleway','Arial', 'Helvetica','sans-serif';
+
+}
+
+body{    
+    margin: 0 0 0 40px;
+
+}
+
+
+/* --------------------------------Style the Nav ----------------------------------------------*/
+.topnav {
+    display: flex;
+    margin: 0 100px 20px 0;
+}
+.topnav a {       
+    padding: 14px 0 16px 0;
+    font-size: 17px;
+    text-decoration: none;
+    display: block;
+}
+.title{    
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 black;
+}
+
+/* -----------------------------Style the nav-right --------------------------------------------*/
+.topnav-right {
+    display: flex;   
+}
+
+#signin{
+    font-weight: bold;   
+    border: none;
+}
+
+.topnav-text-hebergement{
+    float: left;
+    width: 185px;
+    text-align: center;
+}
+
+.topnav-text-activite{
+    float: right;
+    width: 180px;
+    text-align: center;
+}
+
+
+/* -------------------------Style the nav-logo---------------------------------------------------- */
+.logo{ 
+    flex: 1 1 auto;
+    margin: 40px 0 0 0 ;
+}
+
+
+
+/* ------------------------For the  active/current Nav------------------------------------------- */
+
+.topnav-text-hebergement:hover {
+    border-top: 5px solid #0065fc;
+    color: #0065fc;
+}
+.hebergement-active:hover {
+    color: #0065fc;
+}
+
+.topnav-text-activite:hover {
+    border-top: 5px solid #0065fc;
+    color: #0065fc;
+}
+.activite-active:hover {   
+    color: #0065fc;
+}
+
+
+/*--------------------------Style Headers Search----------------------------------------------------------*/
+.header-title{
+    font-weight: bolder;
+}
+
+.container-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: auto;
+    width: 31.4em;
+    background-color: #f2f2f2;
+    overflow: auto;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.flex {
+    padding: 10px;  
+    border: 5px solid #0065FC;
+    font-size: 20px;
+    text-align: center;
+
+}
+.home{
+    background-color: #f2f2f2;
+    border: 5px solid #f2f2f2;
+    width: 2.5em; 
+}
+
+#adress-text{
+    background-color: white;
+    border: 2px solid #f2f2f2;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.rechercher{
+    background-color : #0065FC;
+    border-radius: 00px 20px 20px 0px;
+    color: white;
+}
+
+
+/*--------------------------Style Headers Filtering---------------------------*/
+.filtre, .filtre-label{
+    display: inline-block;
+    margin-right: 33px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cadre{
+    display: inline-block;
+    height: 50px;     
+    border-radius: 25px;
+    border-top:  1px solid   #d9d9d9;
+    border-bottom:   1px solid   #d9d9d9;
+    border-right:  1px solid   #d9d9d9;
+    border-left: none;
+    margin-right: 33px;
+}
+
+.cadre:hover{
+    background-color: #deebff;
+}
+
+.filtre-logo-container{
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #deebff;
+    width: 50px; 
+    height: inherit;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.filtre-logo{
+    font-size: 20px;
+    text-align: center;
+    margin: 15px;
+}
+
+.filtre-text-container{
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.info-container{
+    margin: 30px 0 30px 0;
+}
+
+.info-label{
+    display: inline-block;
+    border-radius: 50px;
+    border:  1px solid #deebff;
+    width: 50px; 
+    height: 50px;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.info-text{
+    display: inline-block;
+}
+
+.info-logo{
+    font-size: 20px;
+    text-align: center;
+    margin: 15px;
+    color: #0065FC;
+
+}
+
+
+/*--------------------------Style Section 1 Hebergement---------------------------*/
+.hebergement{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.box1{
+    float: left;
+    background-color: #F2F2F2;
+    width: 1080px;
+    height: 700px;
+    text-align: left;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    border-radius: 20px;
+}
+
+.clic-card{
+    text-decoration: none;
+    color: black;
+}
+
+.h2-title, .afficher-plus{
+    margin: 40px 0 30px 40px;
+
+}
+
+.column-hebergement {
+    float: left;
+    width: 250px;
+    margin: 0 40px 40px 40px;
+    padding: 0 10px;
+}
+
+.row-hebergement-1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.card-hebergement {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;    
+    width: 240px;
+    height: 200px;
+    border-radius:10px;
+}
+
+.hebergement-picture{
+    width: 240px;
+    height: 114px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+
+.card-text{
+    text-align: left;
+    margin-left: 20px 
+}
+
+.checked {
+    color:  #0065FC;
+}
+
+.nochecked{
+    color:#D3D3D3;
+    margin-bottom: 20px;
+
+}
+
+.rating-hebergement{
+    margin: 15px 0 0 0;
+}
+
+.title-card{
+    margin: 0 0 15px 0;
+
+}
+
+/*--------------------------Style Section 1 Populaire---------------------------*/
+.h2-title-populaire{
+    margin: 10px 0px 20px 40px;
+
+}
+.chart-logo{
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0 0 165px;
+
+
+}
+.box2{
+    float: right;
+    background-color: #F2F2F2;
+    grid-column: 3/ 3;
+    grid-row: 1;
+    height: 700px;
+    width: 480px;
+    border-radius: 20px;
+}
+
+.column-populaire{
+    background-color: #F2F2F2;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-populaire {
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px 0 5px 5px;
+    margin: 0 0 40px 40px;
+    text-align: left;
+    background-color: #f2f2f2;
+    width: 380px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.populaire-picture{
+    float:left;
+    padding: 1px;
+    margin-right: 20px;
+    width: 130px;
+    height: 133px;
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
+}
+
+.card-populaire-text{
+    float:right;
+
+    margin-left: 20px 
+}
+
+.rating-populaire{
+    margin-top: 45px;
+}
+
+
+/*--------------------------Style Section 2 Activite---------------------------*/
+.box3{
+    width: 100%;
+
+}
+.h2-title-activite{
+    margin: 40px 0 20px 0;
+}
+
+.row-activite-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px 20px;
+    height: 450px;
+    grid-template-areas:
+        "Vieux-port Vieux-port Pomegues Pomegues Calangues Calangues Dame-de-la-garde Dame-de-la-garde"
+        "Vieux-port Vieux-port Pomegues Pomegues Calangues Calangues Dame-de-la-garde Dame-de-la-garde"
+        "Vieux-port Vieux-port Pomegues Pomegues Calangues Calangues Dame-de-la-garde Dame-de-la-garde"
+        "Vieux-port Vieux-port Pomegues Pomegues Calangues Calangues Longchamps Longchamps"
+        "Vieux-port Vieux-port Frioul Frioul Calangues Calangues Longchamps Longchamps"
+        "Vieux-port Vieux-port Frioul Frioul Calangues Calangues Longchamps Longchamps";
+}
+
+.card-vieux-port{
+    grid-area: Vieux-port;
+
+}
+
+.card-Pomegues {
+    grid-area: Pomegues;
+}
+
+.card-Frioul {
+    grid-area: Frioul;
+}
+
+.card-Calangues {
+    grid-area: Calangues;
+}
+
+.card-Dame-de-la-garde { 
+    grid-area: Dame-de-la-garde;
+}
+
+.card-Longchamps { 
+    grid-area: Longchamps;
+}
+
+.card-activite {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 345px;
+    border-radius: 10px;
+}
+
+.activite-picture{
+    float:left;
+    padding: 1px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 344px;
+    height: 181px;
+    border-radius:  10px 10px 0px 0px;
+    object-fit: cover;
+}
+.picture-frioul{
+    width: 344px;
+    height: 89px;
+    object-fit: cover;
+
+
+}
+.picture-large{
+    width: 344px;
+    height: 400px;
+}
+
+.picture-pomegues{
+    height: 242px;
+}
+
+
+.picture-dame, .picture-longchamps{
+    height: 167px;
+}
+
+.text-activite{
+    margin-left: 20px;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+
+/*--------------------------Style Footer---------------------------*/
+.box3{
+    width: 100%;
+
+}
+
+.footer-propos{
+    float: left;
+    margin: 40px 0 40px 0;
+}
+
+.footer-hebergement{
+
+    float: left;
+    margin: 40px 0 40px 400px;
+}
+
+.footer-assistance{
+    float: right;
+    margin: 40px 400px 40px 0;
+}
+
+
+
+
+/* ------------------------Responsive ----------------------- */
+@media only screen and (max-width: 1650px){
+    body{
+        display: block;
+        width: 100%;
+
+    }
+    .box1 {
+        display: table-cell;
+        float: none;
+    }
+    .hebergement{
+        display: inline;
+    } 
+    .box2{
+        display: block;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .box3 {
+        display: inline-block;
+        float: none;
+    }
+    .row-activite-container{
+        grid: none;
+        display: block;
+    }
+    .card-Vieux-port, .card-Pomegues, .card-Calangues, .card-Dame-de-la-garde, .card-Frioul, .card-Longchamps{
+        margin-top: 20px;
+    }
+    .footer-propos, .footer-hebergement,.footer-assistance{
+        float: none;
+        display: contents;
+    }
+    .box4{
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 1129px) {
+    body{
+        margin: 1em;
+        width: auto;
+    }
+    .filtre, .filtre-label {
+        display: block;
+    }
+    .cadre{
+        margin-top: 10px;
+        display: table;
+    }
+    .info-container {
+        display: initial;
+    }  
+}
+@media only screen and (max-width: 1100px) {
+    .topnav a, .topnav-right {
+        float: none;
+
+    }
+    .navbar a {
+        float: none;
+        display: inline;
+    }
+    .box1{
+        width: 880px;
+    }
+}
+@media only screen and (max-width: 760px) {
+
+    .topnav a, .topnav-right {
+
+        display: block;
+    }
+
+    .filtre, .filtre-label {
+        float: none;
+
+    }
+    .box1{
+        width: 480px;
+    }
+}
+@media only screen and (max-width: 620px) {
+    header h2{
+        display: table-caption;
+    }
+
+    .info-container {
+        white-space: nowrap;
+        display: initial;
+    }
+    .info-label{
+        display: block;
+        float: left;
+    }
+    .info-text{
+        display: table-caption;
+    }
+    .info-text-p {
+        white-space: break-spaces;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container-header{
+        display: inline-block;
+        width: 15em;
+        overflow: inherit;
+    }
+    .home{
+        width: inherit;
+    }
+    .rechercher{
+        width: inherit;
+    }
+    .box1{
+        width: 380px;
+    }
+    .box2{
+        width: 380px;
+    }
+    .card-populaire{
+        width: 330px;
+    }
+    .h2-title-populaire {
+        margin-right: 20px;
+    }
+
+
+}
