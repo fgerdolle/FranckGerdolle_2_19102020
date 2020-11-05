@@ -151,6 +151,7 @@ body{
     font-weight: bold;
     font-size: 20px;
     width: 200px;
+    width: -moz-available;
     font-family: 'Raleway','Arial', 'Helvetica','sans-serif';
 
 }
