@@ -492,9 +492,9 @@ body{
     .info-text {
         display: inline;
     }
-    .box1 {
-        display: table-cell;
+    .box1 {        
         float: none;
+        width: 100%;
     }
     .hebergement{
         display: inline;
@@ -502,10 +502,7 @@ body{
     .box2{
         width: auto;  
         height: 850px;
-    }
-    .row-hebergement-1{
-        margin: 0px;
-    }
+    }    
     .rating-populaire-soleil,.rating-populaire-bleu{
         margin-top: 90px;
     }
@@ -517,8 +514,7 @@ body{
         width: 60%;
     }    
     .card-hebergement{
-        margin: 20px auto;
-        width: 60%;
+        margin: 20px auto;       
     }
     .h2-title-populaire {
         margin-left: 40px;    
@@ -569,10 +565,7 @@ body{
     }    
     .card-populaire {       
         margin-left: 60px;
-    }
-    .card-hebergement {
-        margin: 0 0 20px 100px;
-    }
+    }   
     .card-activite {
 
         margin: 0 0 20px 190px;
