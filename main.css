@@ -450,8 +450,8 @@ body{
 /* ------------------------Responsive ----------------------- */
 @media only screen and (min-width: 300px ) and ( max-width: 374px){
     .box2{        
-    display: block;
-    width: fit-content;
+        display: block;
+        width: fit-content;
     }
     .card-populaire{
         width: 300px;
