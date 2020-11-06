@@ -293,7 +293,7 @@ body{
     text-align: center;
     width: 325px;
     height: 200px;
-    border-radius:10px;
+    border-radius:20px;
     background-color: white;
 
 }
@@ -301,7 +301,7 @@ body{
 .hebergement-picture{
     width: 95%;
     height: 114px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     padding: 5px;
 }
@@ -366,7 +366,7 @@ body{
     text-align: left; 
     width: 90%;
     height: 145px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: white;
 }
 h3{
@@ -379,7 +379,7 @@ h3{
     margin-right: 10px;
     width: 130px;
     height: 100%;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 20px 0px 0px 20px;
     object-fit: cover;
 }
 
@@ -416,7 +416,7 @@ h3{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     height: 200px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 40px;
     background-color: white;
 }
@@ -427,7 +427,7 @@ h3{
     margin-bottom: 30px;
     width: 100%;
     height: 135px;
-    border-radius:  10px 10px 0px 0px;
+    border-radius:  20px 20px 0px 0px;
     object-fit: cover;
 }
 
@@ -460,6 +460,10 @@ h3{
     }
     .rating-populaire-chambre {
         margin-top: 40px;
+    }
+    .activite-picture {
+        margin-bottom: 10px; 
+
     }
 }
 
@@ -659,7 +663,7 @@ h3{
     .box2{
         width: 400px;       
         float: right;
-        height: 900px;
+        height: 880px;
     }
     .card-populaire {
         margin: 40px 0 0 0;
@@ -691,11 +695,12 @@ h3{
         display: inline-block;
         background-color: #F2F2F2;       
         border-radius: 20px;
+        height: 880px;
     }
     .card-hebergement {
         margin: 0 10px 20px 0px;
         float: left;       
-        height: 220px;
+        height: 200px;
         width: 250px;
     }    
     .box3{
@@ -722,7 +727,8 @@ h3{
     }
     .card-Frioul { 
         grid-area: frioul; 
-        height: 90%;
+        height: 70%;
+        margin-top: 40px;
     }
     .card-Calangues {
         grid-area: calanques; 
@@ -742,15 +748,16 @@ h3{
     }
     .activite-picture{
         width: 100%;
+        margin-bottom: 20px;
     }
     .picture-large {       
-        height: 78%;
+        height: 80%;
     }
     .picture-medium{
-        height: 50%;
+        height: 60%;
     }
     .picture-small{
-        height: 50%;
+        height: 45%;
     }
     .text-activite {   
         display: block;
@@ -784,14 +791,38 @@ h3{
     }       
     .card-hebergement{
         width: 30%;
-        margin: 0 20px 0 0;
+        flex-wrap: wrap;
+        display: flex;
+        margin: 20px 10px 20px 10px;
     }
     .footer-hebergement, .footer-assistance {
         margin: 0 0 0 180px;
     }
     .rating-populaire-soleil, .rating-populaire-bleu, .rating-populaire-chambre {
         margin-top: 45px;
-    }   
+    }     
+    .card-Dame-de-la-garde {         
+        height: 180px;
+    }
+    .card-Longchamps {            
+        margin: 0px 0 10px 0;
+        height: 200px;
+
+    }    
+    .activite-picture{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .picture-large {       
+        height: 85%;
+
+    }
+    .picture-medium{
+        height: 68%;
+    }
+    .picture-small{
+        height: 60%;
+    }
 
 
 }
@@ -807,11 +838,7 @@ h3{
     }
     .box2{
         height:750px;
-    }
-    .card-hebergement{
-        margin: 0 20px 0 10px;
-        width: 29%;
-    }
+    }    
     .card-populaire{
         margin: 30px 0 0 0;
     }
@@ -821,6 +848,11 @@ h3{
     .row-hebergement-1 {
         margin: 0px 0px 0px 80px;
     }
+    .rating-populaire-soleil, .rating-populaire-bleu, .rating-populaire-chambre {
+        margin-top: 60px;
+    }  
+
+
 }
 
 
@@ -830,36 +862,7 @@ h3{
 
     .topnav{
         margin: 0px 0 0 20px;
-    }     
-    .card-activite{
-        width: 80%;
-        margin: 0
-    }
-    .row-activite-container {        
-        grid-template-columns: 0;        
-        gap: 0px 0px;
-        grid-template-areas:
-            "vieux-port vieux-port vieux-port  pomegue pomegue  calanques calanques notre-dame notre-dame"
-            "vieux-port vieux-port vieux-port  frioul frioul  calanques calanques  longchamps longchamps";
-        margin: 20px 0px 20px 25px;
-    }   
-    .card-Frioul { 
-        grid-area: frioul; 
-        height: 75%;
-        margin: 30px 0 0 0;
-    }
-    .footer-hebergement, .footer-assistance {
-        margin: 0 0 0 300px;
-    }
-    .activite-title {
-        margin-left: 15px;
-    }
-    .picture-small{
-        height: 45%;
-    }
-    .picture-medium{
-        height: 55%;
-    }
+    } 
 
 
 }
