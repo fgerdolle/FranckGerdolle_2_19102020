@@ -1,15 +1,12 @@
 html{
     font-family: 'Raleway','Arial', 'Helvetica','sans-serif';
-
-
 }
 
 body{   
     display: block;   
     margin: 0;
-
-
 }
+
 .page-container{
     margin: 0 10px 0 10px;
     width: auto;
@@ -30,7 +27,7 @@ body{
     gap: 20px 0px;
     grid-template-areas:
         "logo . . inscription"
-        "Hébergement Hébergement Activite Activite";
+        "Hébergement Hébergement Activite Activite";    
 }
 
 
@@ -39,19 +36,19 @@ body{
 }
 
 .topnav .topnav-right a {
-
     padding: 14px 16px;
     font-size: 17px;
     text-decoration: none;
 }
+
 .logo-picture{
     grid-area: logo;
-    margin: 10px 0px 0px 20px;
+    margin: 20px 0px 0px 20px;
 }
 
 .inscription{
     grid-area: inscription;     
-    margin: 25px 20px 0px 0;
+    margin: 35px 25px 0px 0;
 }
 
 #signin{
@@ -59,6 +56,7 @@ body{
     border: none;
     color: #0065fc;
 }
+
 .logo{
     display: inline-block;
     height: 50px;
@@ -289,9 +287,9 @@ body{
 .card-hebergement {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 0 0px 16px 0px;
-    margin: 15px;
+    margin: 10px 15px 0 15px;
     text-align: center;
-    width: 325px;
+    width: 330px;
     height: 200px;
     border-radius:20px;
     background-color: white;
@@ -326,13 +324,13 @@ body{
 }
 
 .afficher-plus{
-    margin: 0 0 40px 10px;
+    margin: 0 0 50px 10px;
 
 }
 
 /*--------------------------Style Section 1 Populaire---------------------------*/
 .h2-title-populaire{
-    margin: 40px 40px 40px 20px;
+    margin: 40px 40px 30px 20px;
     font-weight: bold;
     float: left;
 
@@ -364,7 +362,7 @@ body{
     padding: 5px 0 5px 5px;
     margin: 0 0 20px 10px;
     text-align: left; 
-    width: 90%;
+    width: 335px;
     height: 145px;
     border-radius: 20px;
     background-color: white;
@@ -414,8 +412,8 @@ h3{
 
 .card-activite {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: 200px;
-    width: 100%;
+    width: 335px;
+    height: 190px;
     border-radius: 20px;
     margin-bottom: 40px;
     background-color: white;
@@ -424,7 +422,7 @@ h3{
 .activite-picture{
     float:left;
     padding: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 100%;
     height: 135px;
     border-radius:  20px 20px 0px 0px;
@@ -432,7 +430,7 @@ h3{
 }
 
 .text-activite{
-    margin-left: 20px;
+    margin: 0 0 40px 20px;
     text-align: left;
     font-weight: bold;
 
@@ -468,7 +466,7 @@ h3{
     }
 }
 
-@media only screen and (min-width: 667px){
+@media only screen and (min-width: 470px)  and ( max-width: 767px){
     body{
         display: block;
         width: 100%;
@@ -507,18 +505,12 @@ h3{
         display: inline;
     } 
     .box2{
-        width: auto;  
-        height: 750px;
+        width: 500px;  
+        height: 680px;
+        margin: 30px auto;
     }    
-    .rating-populaire-soleil,.rating-populaire-bleu{
-        margin-top: 70px;
-    }
-    .rating-populaire-chambre{
-        margin-top: 50px;
-    }
     .card-populaire {   
-        margin: 15px 125px;
-        width: 60%;
+        margin: 20px 20px 0 80px;       
     }    
     .card-hebergement{
         margin: 20px auto;       
@@ -536,11 +528,10 @@ h3{
         margin-left: 20px;
     }
     .card-activite {
-        margin: 20px auto;
-        width: 50%;
+        margin: 20px auto;        
     }
     .box4{
-        height: 100px;
+        height: 200px;
     }
     .footer-propos, .footer-hebergement, .footer-assistance {
         margin-left: 30px;
@@ -548,41 +539,63 @@ h3{
     }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) and ( max-width: 899px){
     .cadre{
         margin: 20px 50px 0 20px;
     }    
     .info-text {
         width: auto;
     }
-    .cadre-economie {
-        margin: 0 195px 0 0
-    }
+    .cadre {
+        margin: 20px 60px 0 20px;
+    }   
+
     .box2{
-        height: 750px;
+        width: 550px;
+        margin: 0 20px 0 100px;
+    }
+    .card-populaire {
+        margin: 20px auto;
+    }
+    .card-hebergement{
+         margin: 20px auto;
     }
     .h2-title-populaire {        
         margin-bottom: 0;
     }
     .row-hebergement-2 {
         margin: 40px 40px 5px 100px;        
-    }
-    .rating-populaire-soleil,.rating-populaire-bleu {
-        margin-top: 70px;
-    }   
-    .rating-populaire-chambre{
-        margin-top: 50px;
-    }
-    .card-populaire {       
-        margin-left: 60px;
-    }   
+    }         
     .card-activite {
-
         margin: 0 0 20px 190px;
     }    
     .footer-propos, .footer-hebergement, .footer-assistance {
         margin-left: 60px;
+        float: left;
     }
+}
+@media only screen and (min-width: 900px) and ( max-width: 1023px){    
+    .box2 {       
+        width: 550px;
+        margin: auto 160px;
+    }
+    .card-populaire {
+        margin: 20px 0 0 20%;
+    }
+    .card-hebergement{
+        margin:  0 30%;
+    }
+    .card-activite{
+        margin:  30px 30%;
+    }
+    .footer-propos, .footer-hebergement, .footer-assistance {
+        margin-left: 60px;
+        float: left;
+    }
+    .box4{
+        height: 200px;
+    }
+
 }
 
 @media only screen and (min-width: 1024px){
@@ -656,7 +669,6 @@ h3{
     }
     .cadre-eco-fam{        
         float: left;
-
     }
     .cadre-economie, .cadre-famille,.cadre,.cadre-romantique{    
         margin: 0 20px 0 0;
@@ -665,15 +677,11 @@ h3{
         width: 400px;       
         float: right;
         height: 880px;
+        margin: 0;
     }
     .card-populaire {
-        margin: 40px 0 0 0;
-        width: 320px;
-        height: 160px;
-    }
-    .populaire-picture {
-        height: 160px;
-    }
+        margin: 40px 0 0 0;       
+    }    
     .h2-title-populaire {
         margin: 40px 0px 0px 40px;
     }
@@ -687,9 +695,7 @@ h3{
     .row-hebergement-1 {
         margin: 0px 0px 0px 40px;        
     }      
-    .rating-populaire-chambre,.rating-populaire-soleil, .rating-populaire-bleu {
-        margin-top: 60px;
-    }
+
     .box1{
         width: 580px;
         float: left;        
@@ -703,7 +709,10 @@ h3{
         float: left;       
         height: 200px;
         width: 250px;
-    }    
+    } 
+    .afficher-plus{
+        margin: 20px ;
+    }
     .box3{
         float: left;        
         height: 500px;
@@ -763,14 +772,15 @@ h3{
     .text-activite {   
         display: block;
     }
-    .box4{
-        height: 200px;
+    .box4{       
         width: 100%;
         display: inline-block;
     }
-    .footer-hebergement, .footer-assistance {        
-        margin: auto 8%;
+    .footer-propos, .footer-hebergement, .footer-assistance {
+        float: left;
+        margin: auto 5%;
     }
+    
 
 }
 
@@ -781,10 +791,10 @@ h3{
     }    
     .box1{
         width: 65%;
-        height: 810px;
+        height: 780px;
     }
     .box2{
-        height: 810px;
+        height: 780px;
         margin: 0 20px 0 0;
     }
     .afficher-plus{
@@ -834,24 +844,78 @@ h3{
         margin: 0 auto;
     }
     .box1{
-        width: 70%;   
-        height: 750px;
+        margin-left: 50px;
+        width: 65%;   
+        height: 680px;
+    }
+    .chart-logo {
+        margin: 35px 40px 10px 100px;
     }
     .box2{
-        height:750px;
+        height:680px;
+        width: 410px;
     }    
     .card-populaire{
-        margin: 30px 0 0 0;
+        margin: 30px 10px 10px 30px;
+        width: 345px;
+        height: 145px;
+    }
+    .row-hebergement-2 {
+        margin: 0px;
+    }   
+    .card-hebergement{
+        width: 250px;
+        height: 200px;
+        margin: 30px 30px 0px 0;
+    }
+    .afficher-plus{
+        margin: 30px 0 0 80px;
     }
     .footer-hebergement, .footer-assistance {
         margin: 0 0 0 250px;
     }
     .row-hebergement-1 {
         margin: 0px 0px 0px 80px;
+    }    
+    .card-vieux-port { 
+        grid-area: vieux-port;
+        width: 305px;
+        height: 450px;
     }
-    .rating-populaire-soleil, .rating-populaire-bleu, .rating-populaire-chambre {
-        margin-top: 60px;
-    }  
+    .card-Pomegues {
+        grid-area: pomegue; 
+        width: 300px;
+        height: 240px;
+
+    }
+    .card-Frioul { 
+        grid-area: frioul; 
+        width: 300px;
+        height: 165px;        
+        margin-top: 55px;
+    }
+    .card-Calangues {
+        grid-area: calanques; 
+        width: 300px;
+        height: 450px;
+    }
+    .card-Dame-de-la-garde { 
+        grid-area: notre-dame; 
+        width: 300px;
+        height: 195px;
+    }
+    .card-Longchamps { 
+        grid-area: longchamps; 
+        width: 300px;
+        height: 210px;
+        margin: 15px 0 0 0;
+    }
+    .row-activite-container {      
+        margin: 20px 0px 20px 40px;
+    }
+    .activite-title {
+        margin-left: 50px;
+    }
 
 
 }
