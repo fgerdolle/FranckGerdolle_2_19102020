@@ -7,10 +7,7 @@ body{
     margin: 0;
 }
 
-.page-container{
-    margin: 0 10px 0 10px;
-    width: auto;
-}
+
 
 
 /* --------------------------------Style the Nav top ----------------------------------------------*/
@@ -111,18 +108,18 @@ body{
 .header-title{
     font-weight: bold;
     display: block;
-    margin: 20px 0 0 10px;
+    margin: 20px 0 0 20px;
     font-size: 25px;
     text-shadow: 0 0 black;
 }
 .header-text{
-    margin: 10px 0 40px 10px;
+    margin: 10px 0 40px 20px;
 }
 .container-header {
     display: flex;
     background-color: #f2f2f2;
     border-radius: 20px 20px 20px 20px;
-    margin-left: 10px;
+    margin-left: 20px;
     padding: 0;   
     width: 100px;
 }
@@ -172,7 +169,7 @@ body{
 /*--------------------------Style Headers Filtering---------------------------*/
 .filtre, .filtre-label{
     display: block;
-    margin: 20px 0 10px 10px;
+    margin: 20px 0 10px 20px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -201,10 +198,22 @@ body{
     vertical-align: middle;
 }
 
+.logo-economie{
+    margin: 15px 15px 15px 10px;
+}
+.logo-familial{
+    margin: 15px 13px 15px 18px;
+}
+.logo-romantique{
+    margin: 15px;
+}
+.logo-animaux{
+    margin: 15px 18px 15px 13px;
+}
+
 .filtre-logo{
     font-size: 20px;
-    text-align: center;
-    margin: 15px;
+    text-align: center;    
     color: #0065fc;
 }
 
@@ -238,9 +247,9 @@ body{
 .info-text{
     display: inline-block;
     width: 300px;
+    font-weight: bold;
 }
-.info-text-p{
-
+.info-text-p{    
     display: inline;
     font-size: 15px;
 }
@@ -297,11 +306,17 @@ body{
 }
 
 .hebergement-picture{
-    width: 95%;
+    width: 310px;
     height: 114px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     padding: 5px;
+}
+
+.rating-hebergement,.rating{
+    font-size: smaller;
+    flex: auto;
+    display: flex;
 }
 
 .card-text{
@@ -324,7 +339,7 @@ body{
 }
 
 .afficher-plus{
-    margin: 0 0 50px 10px;
+    margin: 0 0 50px 50px;
 
 }
 
@@ -339,13 +354,13 @@ body{
 .chart-logo{
     font-size: 30px;
     text-align: center;
-    margin: 40px 10px 0 0;
+    margin: 40px 20px 0 0;
     float:right;
 
 }
 .box2{
     background-color: #F2F2F2;
-    height: 650px;
+    height: 620px;
     border-radius: 20px;
 }
 
@@ -360,7 +375,7 @@ body{
     float: left;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 5px 0 5px 5px;
-    margin: 0 0 20px 10px;
+    margin: 0 0 10px 10px;
     text-align: left; 
     width: 335px;
     height: 145px;
@@ -404,6 +419,7 @@ h3{
 .box3{
     width: 98%;
     margin: 0 20px 0 0;
+    margin-top: 60px;
 }
 
 .row-activite-container {
@@ -440,9 +456,10 @@ h3{
 /*--------------------------Style Footer---------------------------*/
 .box4{
     background-color: #F2F2F2;
+    margin-top: 60px;
 }
 .footer-propos,.footer-hebergement,.footer-assistance{
-    margin-left: 20px;
+    margin-left: 30px;
     padding-top: 20px;
 }
 
@@ -466,7 +483,11 @@ h3{
     }
 }
 
-@media only screen and (min-width: 470px)  and ( max-width: 767px){
+@media only screen and (min-width: 470px) {
+    .page-container{
+        margin: 0 10px 0 10px;
+        width: auto;
+    }
     body{
         display: block;
         width: 100%;
@@ -533,13 +554,12 @@ h3{
     .box4{
         height: 200px;
     }
-    .footer-propos, .footer-hebergement, .footer-assistance {
-        margin-left: 30px;
+    .footer-propos, .footer-hebergement, .footer-assistance {       
         float:left;
     }
 }
 
-@media only screen and (min-width: 768px) and ( max-width: 899px){
+@media only screen and (min-width: 690px){
     .cadre{
         margin: 20px 50px 0 20px;
     }    
@@ -549,16 +569,28 @@ h3{
     .cadre {
         margin: 20px 60px 0 20px;
     }   
+    .mobile-only{
+        display: none;
+    }
+    .desktop-only{
+        display: inherit;
+    }
 
     .box2{
         width: 550px;
         margin: 0 20px 0 100px;
     }
     .card-populaire {
-        margin: 20px auto;
+        margin: 10px auto;
+    }
+    #ancre-hebergements  {
+        margin: 50px 100px 20px 100px;
+    }
+    .afficher-plus, .activite-title{
+        margin: 20px 100px 20px 100px;
     }
     .card-hebergement{
-         margin: 20px auto;
+        margin: 20px auto;
     }
     .h2-title-populaire {        
         margin-bottom: 0;
@@ -574,13 +606,20 @@ h3{
         float: left;
     }
 }
-@media only screen and (min-width: 900px) and ( max-width: 1023px){    
+
+@media only screen and (min-width: 800px) {    
     .box2 {       
         width: 550px;
         margin: auto 160px;
     }
     .card-populaire {
-        margin: 20px 0 0 20%;
+        margin: 20px 0 0 0;
+    }
+    .mobile-only{
+        display: none;
+    }
+    .desktop-only{
+        display: inherit;
     }
     .card-hebergement{
         margin:  0 30%;
@@ -596,6 +635,19 @@ h3{
         height: 200px;
     }
 
+}
+
+@media only screen and (min-width: 800px) { 
+    .cadre{
+        margin: 20px 80px 0 20px;
+    }   
+}
+
+
+@media only screen and (min-width: 880px) { 
+    .cadre{
+        margin: 0;
+    }   
 }
 
 @media only screen and (min-width: 1024px){
@@ -621,7 +673,12 @@ h3{
         margin: 25px 0px 0px 10px;
         width: 150px;
     }
-
+    .mobile-only{
+        display: none;
+    }
+    .desktop-only{
+        display: inherit;
+    }
     .topnav-text-hebergement{
         grid-area: hebergement; 
         width: 150px;
@@ -658,7 +715,7 @@ h3{
     }    
     .filtre {
         display: inline-block; 
-        margin: 0 0 0 20px;        
+        margin: 30px 0 0 20px;        
         width: 100%;
     }
     .filtre-label{
@@ -681,7 +738,13 @@ h3{
     }
     .card-populaire {
         margin: 40px 0 0 0;       
-    }    
+    }  
+    .hebergement-picture{
+        width: 95%;
+    }
+    #ancre-hebergements, .activite-title {
+        margin: 40px;
+    }
     .h2-title-populaire {
         margin: 40px 0px 0px 40px;
     }
@@ -780,7 +843,7 @@ h3{
         float: left;
         margin: auto 5%;
     }
-    
+
 
 }
 
@@ -843,8 +906,7 @@ h3{
         width: 1460px;
         margin: 0 auto;
     }
-    .box1{
-        margin-left: 50px;
+    .box1{        
         width: 65%;   
         height: 680px;
     }
